@@ -5,7 +5,7 @@ import org.apache.spark.SparkContext
 import SparkContext._
 import org.apache.spark.util.Vector
 
-object kmeans {
+object Kmeans {
 	val N = 1000
 	val R = 1000     //随机数范围  0-1  *  R
 	val D = 10       //点空间纬度

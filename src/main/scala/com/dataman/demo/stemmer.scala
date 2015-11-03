@@ -333,8 +333,24 @@ class Stemmer
 }
 
 
-object runit
+object Stemmer
 {
+  def stemming(file: String):String = {
+    val l = file.trim()
+    val stemmer = new Stemmer()
+    stemmer.add(l)
+
+    if ( stemmer.b.length > 2 )
+    {
+      stemmer.step1()
+      stemmer.step2()
+      stemmer.step3()
+      stemmer.step4()
+      stemmer.step5a()
+      stemmer.step5b()
+    }
+    stemmer.b
+  }
 
   def main(args: Array[String]) =
   {
