@@ -24,7 +24,7 @@ object Preprocess {
     val stopword = sc.textFile(stopwordPath).collect
     val finalData = cleanData.map(line => {
       line.split(" ").filterNot{w => stopword.contains(w)}.mkString(" ")
-    }).map(line => Stemmer.stemming(line))
+    }).map(line => Stemmer.stemming(line)).zipWithIndex.map(x => x._2.toString + "," + x._1)
     finalData.repartition(10).saveAsTextFile(outputPath)
     sc.stop()
   }
