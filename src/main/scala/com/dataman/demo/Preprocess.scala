@@ -19,7 +19,7 @@ object Preprocess {
 
     val data = sc.textFile(inputPath)
     val cleanData = data.map(line => {
-      line.replaceAll( """[^\w]""", " ").replaceAll("""[1-9,0]""", "").trim.replaceAll("_", "").replaceAll(" +", " ").replaceAll("_", "")
+      line.replaceAll( """[^\w]""", " ").replaceAll("""[1-9,0]""", "").trim.replaceAll("_", "").replaceAll(" +", " ").replaceAll("_", "").toLowerCase
     })
     val stopword = sc.textFile(stopwordPath).collect
     val finalData = cleanData.map(line => {
