@@ -4,8 +4,10 @@
 2. scala 2.10.4 or later  
 3. sbt 0.13.8 or later  
 4. spark 1.5.0 or later  
+
 ## 编译  
 `sbt clean assembly`  
+
 ## 作业1—倒排表
 1. 输入  
 数据源：  
