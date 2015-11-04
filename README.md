@@ -7,6 +7,7 @@
 	（doc_id,doc_contents）  
 2.要求  
 建立倒排表  
+	在 Assignment1.scala 中添加相应代码。  
 	倒排表的JSON格式定义为：  
 {w1: [ { w1_d1: [ w1_d1_p1, d1_p2 ] },{ w1_d2: [ w1_d2_p1 ] },{ w1_d3: [ w1_d3_p1 ] } ]}  
 {w2: [ { w2_d1: [ w1_d1_p1, d1_p2, d1_p3] },{ w2_d2: [ w1_d2_p1] } ]}  

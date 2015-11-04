@@ -15,7 +15,7 @@ object Assignment1 {
 
     Logger.getRootLogger.setLevel(Level.WARN)
 
-
+    //please code here.
 
     sc.stop()
   }
