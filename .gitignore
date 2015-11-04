@@ -2,3 +2,5 @@
 project/target
 project/project
 target
+derby.log
+metastore_db
