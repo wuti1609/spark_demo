@@ -8,6 +8,9 @@
 ## 编译  
 `sbt clean assembly`  
 
+## 运行
+bin/spark-submit --class com.dataman.demo.Assignment1 target/scala-2.10/spark-demo-assembly-1.0.jar
+
 ## 作业1—倒排表
 1. 输入  
 数据源：  
