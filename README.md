@@ -22,7 +22,8 @@
 ## 作业1—倒排表
 1. 输入  
 数据源：  
-	data/Assignment1  
+	hdfs://192.168.111.134:9000/Assignment1  
+	(和/data/Assignment1的数据一致)
 数据结构：  
 	（doc_id,doc_contents）  
 2. 要求  
