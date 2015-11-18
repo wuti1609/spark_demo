@@ -15,6 +15,8 @@ object Assignment1 {
 
     Logger.getRootLogger.setLevel(Level.WARN)
 
+    val data = sc.textFile("hdfs://192.168.111.134:9000/Assignment1")
+      
     //please code here.
 
     sc.stop()
