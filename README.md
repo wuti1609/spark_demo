@@ -36,3 +36,35 @@
 3. 输出  
 	所有DF=10的单词及其对应的倒排表键值，输出格式要求每一行为一个合法的JSON格式字符串。  
     
+## 作业2-DataFrame 操作
+
+1. 输入  
+数据源：  
+	```hdfs://192.168.111.134:9000/Assigment2/jingdong.json```  
+数据结构：  
+
+```  
+	 |-- AllComments: string (nullable = true)
+	 |-- HighPraise: string (nullable = true)
+	 |-- _id: struct (nullable = true)
+	 |    |-- $oid: string (nullable = true)
+	 |-- brand: string (nullable = true)
+	 |-- itemId: string (nullable = true)
+	 |-- model: string (nullable = true)
+	 |-- price: string (nullable = true)
+	 |-- timestamp: struct (nullable = true)
+	 |    |-- $date: string (nullable = true)
+	 |-- type1: string (nullable = true)
+	 |-- type2: string (nullable = true)
+	 |-- type3: string (nullable = true)
+	 |-- url: string (nullable = true)
+```  
+
+2. 要求  
+	- 使用 SQLContext 读取 jingdong 数据
+	- 使用 DataFrame 操作
+	- 找出商品中最贵的1000个“手机”
+	- 找出商品中评论最多的1000个“手机”
+	- 找出以上两个数据集中都出现过的“手机”，打印出名称、价格、评论数、好评度以及商品编号
+	- 输出格式，每条记录为单行有效 JSON
+	
