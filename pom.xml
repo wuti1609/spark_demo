@@ -7,6 +7,16 @@
     <packaging>jar</packaging>
     <name>spark-demo</name>
 
+    <properties>
+        <scala.version>2.10.4</scala.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.7</java.version>
+        <PermGen>64m</PermGen>
+        <MaxPermGen>512m</MaxPermGen>
+        <CodeCacheSize>512m</CodeCacheSize>
+    </properties>
+
     <repositories>
         <repository>
             <id>osc maven repository</id>
